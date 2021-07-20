@@ -10,7 +10,6 @@ pipeline {
                 '''
             }
         }
-    }
       stage('TEST') {
             steps {
                 sh '''
@@ -20,7 +19,6 @@ pipeline {
                 '''
             }
         }
-    }
 stage('DEPLOY') {
             steps {
                 sh '''
