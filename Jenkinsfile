@@ -27,7 +27,7 @@ stage('DEPLOY') {
                 sh '''
                 pwd
                 sleep 5
-                echo This is the first stage: BUILD
+                echo This is the first stage: DEPLOY
                 '''
             }
         }
