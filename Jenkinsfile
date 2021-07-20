@@ -22,7 +22,7 @@ pipeline {
             }
         }
 stage('DEPLOY') {
-    agent { label 'master' }
+    agent { label 'magent1' }
             steps {
                 sh '''
                 pwd
