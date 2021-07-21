@@ -12,12 +12,28 @@ pipeline {
             }
         }
       stage('TEST') {
-          agent { label 'agent2' }
-            steps {
+          parallel {
+              stage('Test1') {
+                  step {
                 sh '''
-                pwd
                 sleep 5
-                echo This is the first stage: TEST
+                echo This is the first stage: TEST1
+                '''
+            }
+        }
+              stage('Test2') {
+                  step {
+                sh '''
+                sleep 5
+                echo This is the first stage: TEST2
+                '''
+            }
+        }
+              stage('Test3') {
+                  step {
+                sh '''
+                sleep 5
+                echo This is the first stage: TEST3
                 '''
             }
         }
