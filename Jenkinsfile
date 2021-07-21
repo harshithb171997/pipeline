@@ -12,7 +12,7 @@ pipeline {
         }
       stage('TEST') {
           parallel {
-              stage('Test1') {
+              stage('TEST1') {
                   step {
                 sh '''
                 sleep 5
@@ -20,7 +20,7 @@ pipeline {
                 '''
             }
         }
-              stage('Test2') {
+              stage('TEST2') {
                   step {
                 sh '''
                 sleep 5
@@ -28,7 +28,7 @@ pipeline {
                 '''
             }
         }
-              stage('Test3') {
+              stage('TEST3') {
                   step {
                 sh '''
                 sleep 5
