@@ -13,7 +13,7 @@ pipeline {
       stage('TEST') {
           parallel {
               stage('TEST1') {
-                  step {
+                  steps {
                 sh '''
                 sleep 5
                 echo This is the first stage: TEST1
@@ -21,7 +21,7 @@ pipeline {
             }
         }
               stage('TEST2') {
-                  step {
+                  steps {
                 sh '''
                 sleep 5
                 echo This is the first stage: TEST2
@@ -29,7 +29,7 @@ pipeline {
             }
         }
               stage('TEST3') {
-                  step {
+                  steps {
                 sh '''
                 sleep 5
                 echo This is the first stage: TEST3
