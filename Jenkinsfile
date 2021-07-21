@@ -36,6 +36,8 @@ pipeline {
                 '''
             }
         }
+          }
+      }
 stage('DEPLOY') {
             steps {
                 sh '''
